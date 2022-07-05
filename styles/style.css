@@ -61,6 +61,17 @@ input:focus::placeholder {
   background: linear-gradient(to bottom right, #ff8080, #ff3737);
 }
 
+/* common section headings */
+
+.headings {
+  width: 765px;
+  text-align: center;
+}
+
+.headings > h1 {
+    margin-bottom: 20px;
+}
+
 /* top section */
 
 #top-section {
@@ -136,5 +147,39 @@ input:focus::placeholder {
 }
 
 /* donation usage section */
+
+#donation-usages {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.usages {
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.usages > img {
+    height: 60px;
+}
+
+.color-1 {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+.color-2 {
+    background-color: rgba(0, 145, 255, 0.1);
+}
+
+.color-3 {
+    background-color: rgba(255, 0, 255, 0.1);
+}
 
 
