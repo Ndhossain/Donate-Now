@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/* deletable comment color : #ff5959 */
+
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 45px;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+#top-section {
+  height: 670px;
+  color: #fff;
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.header-background {
+  background-image: url(../images/bannerimage3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#top-section > h1 {
+    font-size: 60px;
+}
+
+/* common classe for sections */
+.section-common-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+/* common class for buttons */
+.common-buttons {
+  padding: 12px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom right, #ff8080, #ff3737);
+}
