@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100;200;300;400;500;600&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lobster&family=Poppins:wght@100;200;300;400;500;600&family=Ultra&display=swap");
 
 /* deletable comment color : #ff5959 */
 
@@ -272,7 +272,8 @@ input:focus::placeholder {
   gap: 1em;
 }
 
-#details > p, #details > p > a {
+#details > p,
+#details > p > a {
   font-size: 16px;
   color: #ebebeb;
 }
@@ -307,4 +308,27 @@ input:focus::placeholder {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   border-radius: 5px;
+}
+
+/* footer section */
+
+footer {
+  height: 178px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > h1 {
+  font-family: "Lobster", cursive;
+  color: #ff5959;
+}
+
+footer > p {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Ultra", serif;
 }
