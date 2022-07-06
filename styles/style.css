@@ -39,6 +39,10 @@ a {
   font-family: "Inter", sans-serif;
 }
 
+textarea {
+  resize: none;
+}
+
 /* input::placeholder {
   color: #b3b3b3;
 }
@@ -67,12 +71,12 @@ input:focus::placeholder {
 }
 
 /* common section headings */
-.headings {
+.section-headings {
   width: 765px;
   text-align: center;
 }
 
-.headings > h1 {
+.section-headings > h1 {
   margin-bottom: 20px;
 }
 
@@ -230,4 +234,77 @@ input:focus::placeholder {
 
 .date {
   font-family: "Ultra", serif;
+}
+
+/* Contact Section */
+
+#contact-us {
+  display: flex;
+  width: 80%;
+  border-radius: 11px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.width-set {
+  width: 50%;
+  padding: 40px;
+  height: 304.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+#contact-details {
+  color: #fff;
+  background: #ff5959;
+  border-radius: 10px;
+}
+
+#contact-details > p {
+  color: #fff;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#details > p, #details > p > a {
+  font-size: 16px;
+  color: #ebebeb;
+}
+
+#say-something {
+  color: #ff5959;
+}
+
+#form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.input-field {
+  outline: none;
+  border: 1px solid #ff5959;
+  padding: 5px;
+  border-radius: 5px;
+  background: #fff7f7;
+}
+
+.submit-button {
+  width: 100px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom right, #ff8080, #ff3737);
+  color: #fff;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
 }
