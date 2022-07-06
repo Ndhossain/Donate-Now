@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@100;200;300;400;500;600&family=Ultra&display=swap");
 
 /* deletable comment color : #ff5959 */
 
@@ -34,15 +33,21 @@ ul {
   font-family: "Inter", sans-serif;
 }
 
-input::placeholder {
+a {
+  text-decoration: none;
+  color: #ff5959;
+  font-family: "Inter", sans-serif;
+}
+
+/* input::placeholder {
   color: #b3b3b3;
 }
 
 input:focus::placeholder {
   color: transparent;
-}
+} */
 
-/* common classe for sections */
+/* common classes for sections */
 .section-common-styles {
   display: flex;
   flex-direction: column;
@@ -62,14 +67,20 @@ input:focus::placeholder {
 }
 
 /* common section headings */
-
 .headings {
   width: 765px;
   text-align: center;
 }
 
 .headings > h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* common class for container of boxes */
+.box-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 /* top section */
@@ -144,42 +155,79 @@ input:focus::placeholder {
   font-size: 18px;
   width: 100%;
   padding: 10px;
+  color: #b3b3b3;
 }
 
 /* donation usage section */
 
-#donation-usages {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
+.donation-usages {
+  height: 360px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.usages {
-    height: 360px;
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 30px;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 10px;
-}
-
-.usages > img {
-    height: 60px;
+.donation-usages > img {
+  height: 60px;
 }
 
 .color-1 {
-    background-color: rgba(255, 255, 0, 0.1);
+  background-color: rgba(255, 255, 0, 0.1);
 }
 
 .color-2 {
-    background-color: rgba(0, 145, 255, 0.1);
+  background-color: rgba(0, 145, 255, 0.1);
 }
 
 .color-3 {
-    background-color: rgba(255, 0, 255, 0.1);
+  background-color: rgba(255, 0, 255, 0.1);
 }
 
+/* blog section */
 
+.blog {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.blog > img {
+  width: 95%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading > a {
+  display: block;
+  text-align: end;
+}
+
+.category-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-family: "Ultra", serif;
+}
